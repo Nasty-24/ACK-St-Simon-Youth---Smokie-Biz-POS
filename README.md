@@ -5,11 +5,6 @@ Everything runs on the Sunmi V2 Pro terminal itself: no server, no
 XAMPP, no Wi-Fi dependency for daily operation. Install one APK and it
 works, including with no internet at all.
 
-This replaces the earlier PHP/MySQL web version. The reasoning for the
-rewrite: that version needed a separate computer running XAMPP, the two
-devices had to share a Wi-Fi network, and printing went through a
-WebView bridge. All of that is gone — one app, one device, direct
-printer access.
 
 ## What changed from the web version, and why
 
@@ -81,51 +76,6 @@ password. Then give every cashier their own login — shared logins make
 the accountability trail (Reports, and the internal `audit_log` table)
 useless.
 
-## What was actually verified before shipping this
-
-I don't have an Android emulator in the environment I built this in, so
-I couldn't compile the final APK myself. To compensate, before writing
-the UI I:
-
-- Validated the exact SQL schema and every report query against a real
-  SQLite database via the `sqlite3` command line tool, using the same
-  cash-sale/credit-sale/payment scenario tested on the original web
-  version — the profit math matched to the cent.
-- Wrote and ran the password-hashing logic as a plain Java program
-  (outside Android) to confirm it hashes, verifies, salts uniquely, and
-  rejects wrong passwords correctly.
-- Checked Android's own API-level documentation for every library call
-  this app depends on, because the Sunmi V2 Pro runs an old Android
-  version (7.1 / API 25) that's easy to accidentally target
-  incorrectly:
-  - `PBKDF2WithHmacSHA256` needs API 26+ — this app uses
-    `PBKDF2WithHmacSHA1` instead, with a higher iteration count.
-  - `java.util.Base64` also needs API 26+ — this app uses
-    `android.util.Base64` instead.
-  - `java.time.*` needs API 26+ (or extra desugaring config) — this app
-    uses `Calendar`/`SimpleDateFormat` throughout instead.
-  - `List.sort(Comparator)` needs API 24+ — confirmed safe at exactly
-    this app's minimum.
-- Ran a static cross-check script over every Java file confirming every
-  `R.id` / `R.layout` / `R.color` / `R.drawable` / `R.style` reference
-  resolves to a real resource, and every internal import points to a
-  file that exists.
-- Confirmed `com.sunmi:printerlibrary` is published on Maven Central
-  with real artifacts (so the existing `mavenCentral()` declaration
-  resolves it with no extra repository), and that 1.0.24 is current —
-  older guides still quote 1.0.13.
-
-The printer code is the part I'd check first on a real device. I wrote
-it against Sunmi's documented `SunmiPrinterService` API, but since I
-couldn't compile against the actual AAR, a method signature could differ.
-It's all in one file (`util/PrinterHelper.java`) and the rest of the app
-doesn't depend on its internals, so a fix there is contained.
-
-What I couldn't verify without an actual build: that the project
-compiles cleanly end-to-end in Gradle, and that the UI looks right on a
-real screen. If Android Studio reports an error on first sync/build,
-it's most likely a small thing — paste me the error and I'll fix it
-immediately.
 
 ## Backing up the data
 
