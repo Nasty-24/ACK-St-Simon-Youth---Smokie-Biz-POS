@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Products" style="@style/AppText.Heading" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Cost price is what it takes to make each item — this is what powers the profit numbers on your reports, so keep it current."
+        style="@style/AppText.Muted" android:layout_marginBottom="10dp" />
+
+    <LinearLayout android:id="@+id/productListHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add a product" style="@style/AppText.SubHeading" android:layout_marginBottom="6dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="12dp">
+        <EditText android:id="@+id/newProdName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g. Sausage" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginBottom="8dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText android:id="@+id/newProdUnit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="piece" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginEnd="4dp" />
+            <EditText android:id="@+id/newProdCost" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Cost" android:text="0" android:inputType="numberDecimal" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" />
+            <EditText android:id="@+id/newProdPrice" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Price" android:inputType="numberDecimal" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginStart="4dp" />
+        </LinearLayout>
+        <Button android:id="@+id/addProductButton" style="@style/AppButton.Primary" android:layout_width="match_parent" android:layout_height="50dp" android:text="Add product" android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

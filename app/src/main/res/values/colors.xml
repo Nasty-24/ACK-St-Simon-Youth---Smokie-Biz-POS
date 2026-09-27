@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Same palette as the original web version: a kiosk ledger going
+         digital, not a boardroom dashboard. -->
+    <color name="paper">#F1ECDE</color>
+    <color name="paper_dark">#E4DCC5</color>
+    <color name="paper_card">#FAF7EE</color>
+    <color name="ink">#2B2318</color>
+    <color name="ink_soft">#6B6152</color>
+    <color name="line">#D8CCA9</color>
+
+    <color name="ember">#C1440E</color>
+    <color name="ember_dark">#9A350A</color>
+    <color name="maize">#E8A93B</color>
+    <color name="maize_dark">#C6841E</color>
+    <color name="leaf">#33502F</color>
+    <color name="leaf_dark">#24391F</color>
+    <color name="brick">#8C2F1B</color>
+    <color name="navy">#244A63</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="badge_cash_bg">#E4EDE0</color>
+    <color name="badge_mpesa_bg">#DCE6EE</color>
+    <color name="badge_mpesa_fg">#244A63</color>
+    <color name="badge_credit_bg">#F3E3CB</color>
+    <color name="badge_credit_fg">#8A5A0F</color>
+</resources>

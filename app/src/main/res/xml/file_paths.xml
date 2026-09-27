@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Exposes the app's private database folder only for the explicit
+         "export a backup" action — nothing else on the device can reach
+         these files without the user actively sharing them. -->
+    <files-path name="backups" path="backups/" />
+</paths>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+    android:background="@drawable/bg_card" android:padding="12dp" android:layout_marginBottom="10dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:id="@+id/editUserTitle" style="@style/AppText.SubHeading" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <CheckBox android:id="@+id/editUserActive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Active" />
+    </LinearLayout>
+    <EditText android:id="@+id/editFullName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Full name" android:background="@drawable/bg_input" android:padding="8dp" android:layout_marginTop="6dp" />
+    <RadioGroup android:id="@+id/editRoleGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="6dp">
+        <RadioButton android:id="@+id/editRoleCashier" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Cashier" />
+        <RadioButton android:id="@+id/editRoleAdmin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Admin" />
+    </RadioGroup>
+    <EditText android:id="@+id/editNewPassword" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Reset password (leave blank to keep)" android:inputType="textPassword" android:background="@drawable/bg_input" android:padding="8dp" android:layout_marginTop="6dp" />
+    <TextView android:id="@+id/editLockNote" style="@style/AppText.Muted" android:textColor="@color/brick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:visibility="gone" />
+    <Button android:id="@+id/editUserSaveButton" style="@style/AppButton.Outline" android:layout_width="match_parent" android:layout_height="46dp" android:text="Save changes" android:layout_marginTop="8dp" />
+</LinearLayout>

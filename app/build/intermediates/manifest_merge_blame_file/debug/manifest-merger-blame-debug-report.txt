@@ -1,0 +1,202 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="co.churchyouth.pos"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="30" />
+10
+11    <!--
+12         No network permissions at all — every screen works fully offline.
+13         The only "permission" this app effectively needs is the Sunmi
+14         printer service, which is bound by package name at runtime and
+15         does not require a manifest <uses-permission>.
+16    -->
+17
+18    <queries>
+18-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:9:5-13:15
+19
+20        <!--
+21             Lets the app confirm the Sunmi printer service is installed
+22             on API 30+ (package visibility rules) before trying to bind.
+23        -->
+24        <package android:name="woyou.aidlservice.jiuiv5" />
+24-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:12:9-60
+24-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:12:18-57
+25    </queries>
+26
+27    <permission
+27-->[androidx.core:core:1.10.1] C:\Users\User\.gradle\caches\transforms-3\eec8789f7bc95453bf8e56b1bcf687b5\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+28        android:name="co.churchyouth.pos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28-->[androidx.core:core:1.10.1] C:\Users\User\.gradle\caches\transforms-3\eec8789f7bc95453bf8e56b1bcf687b5\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+29        android:protectionLevel="signature" />
+29-->[androidx.core:core:1.10.1] C:\Users\User\.gradle\caches\transforms-3\eec8789f7bc95453bf8e56b1bcf687b5\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+30
+31    <uses-permission android:name="co.churchyouth.pos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31-->[androidx.core:core:1.10.1] C:\Users\User\.gradle\caches\transforms-3\eec8789f7bc95453bf8e56b1bcf687b5\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+31-->[androidx.core:core:1.10.1] C:\Users\User\.gradle\caches\transforms-3\eec8789f7bc95453bf8e56b1bcf687b5\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+32
+33    <application
+33-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:15:5-52:19
+34        android:allowBackup="false"
+34-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:16:9-36
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.10.1] C:\Users\User\.gradle\caches\transforms-3\eec8789f7bc95453bf8e56b1bcf687b5\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:icon="@drawable/ic_launcher"
+38-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:18:9-45
+39        android:label="@string/app_name"
+39-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:17:9-41
+40        android:supportsRtl="true"
+40-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:20:9-35
+41        android:testOnly="true"
+42        android:theme="@style/Theme.ChurchPos" >
+42-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:19:9-47
+43        <activity
+43-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:22:9-30:20
+44            android:name="co.churchyouth.pos.ui.login.LoginActivity"
+44-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:23:13-51
+45            android:exported="true"
+45-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:24:13-36
+46            android:screenOrientation="portrait" >
+46-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:25:13-49
+47            <intent-filter>
+47-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:26:13-29:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:27:17-69
+48-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:27:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:28:17-77
+50-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:28:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:32:9-130
+54            android:name="co.churchyouth.pos.ui.dashboard.DashboardActivity"
+54-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:32:19-65
+55            android:exported="false"
+55-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:32:66-90
+56            android:screenOrientation="portrait" />
+56-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:32:91-127
+57        <activity
+57-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:33:9-161
+58            android:name="co.churchyouth.pos.ui.pos.PosActivity"
+58-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:33:19-53
+59            android:exported="false"
+59-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:33:54-78
+60            android:screenOrientation="portrait"
+60-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:33:79-115
+61            android:windowSoftInputMode="adjustResize" />
+61-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:33:116-158
+62        <activity
+62-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:34:9-171
+63            android:name="co.churchyouth.pos.ui.checkout.CheckoutActivity"
+63-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:34:19-63
+64            android:exported="false"
+64-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:34:64-88
+65            android:screenOrientation="portrait"
+65-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:34:89-125
+66            android:windowSoftInputMode="adjustResize" />
+66-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:34:126-168
+67        <activity
+67-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:35:9-126
+68            android:name="co.churchyouth.pos.ui.receipt.ReceiptActivity"
+68-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:35:19-61
+69            android:exported="false"
+69-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:35:62-86
+70            android:screenOrientation="portrait" />
+70-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:35:87-123
+71        <activity
+71-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:36:9-173
+72            android:name="co.churchyouth.pos.ui.customers.CustomersActivity"
+72-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:36:19-65
+73            android:exported="false"
+73-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:36:66-90
+74            android:screenOrientation="portrait"
+74-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:36:91-127
+75            android:windowSoftInputMode="adjustResize" />
+75-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:36:128-170
+76        <activity
+76-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:37:9-178
+77            android:name="co.churchyouth.pos.ui.customers.CustomerDetailActivity"
+77-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:37:19-70
+78            android:exported="false"
+78-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:37:71-95
+79            android:screenOrientation="portrait"
+79-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:37:96-132
+80            android:windowSoftInputMode="adjustResize" />
+80-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:37:133-175
+81        <activity
+81-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:38:9-171
+82            android:name="co.churchyouth.pos.ui.products.ProductsActivity"
+82-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:38:19-63
+83            android:exported="false"
+83-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:38:64-88
+84            android:screenOrientation="portrait"
+84-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:38:89-125
+85            android:windowSoftInputMode="adjustResize" />
+85-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:38:126-168
+86        <activity
+86-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:39:9-165
+87            android:name="co.churchyouth.pos.ui.users.UsersActivity"
+87-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:39:19-57
+88            android:exported="false"
+88-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:39:58-82
+89            android:screenOrientation="portrait"
+89-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:39:83-119
+90            android:windowSoftInputMode="adjustResize" />
+90-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:39:120-162
+91        <activity
+91-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:40:9-126
+92            android:name="co.churchyouth.pos.ui.reports.ReportsActivity"
+92-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:40:19-61
+93            android:exported="false"
+93-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:40:62-86
+94            android:screenOrientation="portrait" />
+94-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:40:87-123
+95
+96        <provider
+96-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:42:9-50:20
+97            android:name="androidx.core.content.FileProvider"
+97-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:43:13-62
+98            android:authorities="co.churchyouth.pos.fileprovider"
+98-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:44:13-66
+99            android:exported="false"
+99-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:45:13-37
+100            android:grantUriPermissions="true" >
+100-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:46:13-47
+101            <meta-data
+101-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:47:13-49:54
+102                android:name="android.support.FILE_PROVIDER_PATHS"
+102-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:48:17-67
+103                android:resource="@xml/file_paths" />
+103-->C:\Users\User\Desktop\church-youth-pos-android\app\src\main\AndroidManifest.xml:49:17-51
+104        </provider>
+105        <provider
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+106            android:name="androidx.startup.InitializationProvider"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+107            android:authorities="co.churchyouth.pos.androidx-startup"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+108            android:exported="false" >
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109            <meta-data
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+111                android:value="androidx.startup" />
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\User\.gradle\caches\transforms-3\98441c11c46f6419e4f55d0f1c9541f5\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\User\.gradle\caches\transforms-3\3285ad8cd6936baf05f330eb2a872533\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\User\.gradle\caches\transforms-3\3285ad8cd6936baf05f330eb2a872533\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\User\.gradle\caches\transforms-3\3285ad8cd6936baf05f330eb2a872533\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+115        </provider>
+116    </application>
+117
+118</manifest>

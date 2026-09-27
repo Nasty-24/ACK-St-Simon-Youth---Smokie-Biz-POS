@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Staff accounts" style="@style/AppText.Heading" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Every cashier should have their own login — it's how sales and payments stay traceable to a person."
+        style="@style/AppText.Muted" android:layout_marginBottom="10dp" />
+
+    <LinearLayout android:id="@+id/userListHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add a staff account" style="@style/AppText.SubHeading" android:layout_marginBottom="6dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="12dp">
+        <EditText android:id="@+id/newUserFullName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Full name" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginBottom="8dp" />
+        <EditText android:id="@+id/newUsername" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Username" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginBottom="8dp" />
+        <EditText android:id="@+id/newUserPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Temporary password (min 8 chars)" android:inputType="textPassword" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginBottom="8dp" />
+        <RadioGroup android:id="@+id/newUserRoleGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+            <RadioButton android:id="@+id/newRoleCashier" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Cashier" android:checked="true" />
+            <RadioButton android:id="@+id/newRoleAdmin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Admin" />
+        </RadioGroup>
+        <Button android:id="@+id/addUserButton" style="@style/AppButton.Primary" android:layout_width="match_parent" android:layout_height="50dp" android:text="Add staff account" />
+    </LinearLayout>
+</LinearLayout>

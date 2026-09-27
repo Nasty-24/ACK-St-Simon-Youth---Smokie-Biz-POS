@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="badge_cash_bg">#E4EDE0</color>
+    <color name="badge_credit_bg">#F3E3CB</color>
+    <color name="badge_credit_fg">#8A5A0F</color>
+    <color name="badge_mpesa_bg">#DCE6EE</color>
+    <color name="badge_mpesa_fg">#244A63</color>
+    <color name="brick">#8C2F1B</color>
+    <color name="ember">#C1440E</color>
+    <color name="ember_dark">#9A350A</color>
+    <color name="ink">#2B2318</color>
+    <color name="ink_soft">#6B6152</color>
+    <color name="leaf">#33502F</color>
+    <color name="leaf_dark">#24391F</color>
+    <color name="line">#D8CCA9</color>
+    <color name="maize">#E8A93B</color>
+    <color name="maize_dark">#C6841E</color>
+    <color name="navy">#244A63</color>
+    <color name="paper">#F1ECDE</color>
+    <color name="paper_card">#FAF7EE</color>
+    <color name="paper_dark">#E4DCC5</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="pad_lg">20dp</dimen>
+    <dimen name="pad_md">14dp</dimen>
+    <dimen name="pad_sm">8dp</dimen>
+    <dimen name="radius_md">10dp</dimen>
+    <dimen name="radius_sm">6dp</dimen>
+    <dimen name="tile_min_height">88dp</dimen>
+    <string name="app_name">Church Youth POS</string>
+    <style name="AppButton.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/line</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="cornerRadius">@dimen/radius_sm</item>
+    </style>
+    <style name="AppButton.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/maize</item>
+        <item name="android:textColor">#3A2905</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/radius_sm</item>
+    </style>
+    <style name="AppText" parent="android:Widget">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+    <style name="AppText.Heading">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="AppText.Muted">
+        <item name="android:textColor">@color/ink_soft</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="AppText.SubHeading">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink_soft</item>
+    </style>
+    <style name="BottomNavIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="BottomNavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="BottomNavLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/ink_soft</item>
+    </style>
+    <style name="Theme.ChurchPos" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/ember</item>
+        <item name="colorPrimaryDark">@color/ember_dark</item>
+        <item name="colorAccent">@color/maize</item>
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">@color/ember</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+</resources>

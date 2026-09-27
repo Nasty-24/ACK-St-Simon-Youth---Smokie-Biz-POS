@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reports" style="@style/AppText.Heading" android:layout_marginBottom="10dp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="14dp" android:gravity="center_vertical">
+        <Button android:id="@+id/fromDateButton" style="@style/AppButton.Outline" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="4dp" />
+        <Button android:id="@+id/toDateButton" style="@style/AppButton.Outline" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" />
+        <Button android:id="@+id/applyRangeButton" style="@style/AppButton.Primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go" android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_card" android:padding="10dp" android:orientation="vertical" android:layout_marginEnd="5dp">
+            <TextView style="@style/AppText.Muted" android:text="SALES" android:textSize="10sp" />
+            <TextView android:id="@+id/statSales" style="@style/AppText.SubHeading" android:text="0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_card" android:padding="10dp" android:orientation="vertical" android:layout_marginStart="5dp">
+            <TextView style="@style/AppText.Muted" android:text="REVENUE" android:textSize="10sp" />
+            <TextView android:id="@+id/statRevenue" style="@style/AppText.SubHeading" android:text="KSh 0.00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+        <LinearLayout android:id="@+id/profitCard" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_card" android:padding="10dp" android:orientation="vertical" android:layout_marginEnd="5dp">
+            <TextView style="@style/AppText.Muted" android:text="PROFIT" android:textSize="10sp" />
+            <TextView android:id="@+id/statProfit" style="@style/AppText.SubHeading" android:textColor="@color/leaf" android:text="KSh 0.00" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_card" android:padding="10dp" android:orientation="vertical" android:layout_marginStart="5dp">
+            <TextView style="@style/AppText.Muted" android:text="TOTAL OWED" android:textSize="10sp" />
+            <TextView android:id="@+id/statOwedAllTime" style="@style/AppText.SubHeading" android:textColor="@color/brick" android:text="KSh 0.00" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView style="@style/AppText.SubHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Revenue by day" android:layout_marginBottom="6dp" />
+    <LinearLayout android:id="@+id/dailyBarsHost" android:layout_width="match_parent" android:layout_height="140dp" android:orientation="horizontal"
+        android:background="@drawable/bg_card" android:padding="10dp" android:layout_marginBottom="16dp" />
+
+    <TextView style="@style/AppText.SubHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="By payment method" android:layout_marginBottom="6dp" />
+    <LinearLayout android:id="@+id/methodListHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:background="@drawable/bg_card" android:padding="8dp" android:divider="?android:dividerHorizontal" android:showDividers="middle" android:layout_marginBottom="16dp" />
+
+    <TextView style="@style/AppText.SubHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="By product" android:layout_marginBottom="6dp" />
+    <LinearLayout android:id="@+id/productListHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:background="@drawable/bg_card" android:padding="8dp" android:divider="?android:dividerHorizontal" android:showDividers="middle" android:layout_marginBottom="16dp" />
+
+    <TextView style="@style/AppText.SubHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Top debtors right now" android:layout_marginBottom="6dp" />
+    <LinearLayout android:id="@+id/debtorListHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:background="@drawable/bg_card" android:padding="8dp" android:divider="?android:dividerHorizontal" android:showDividers="middle" />
+</LinearLayout>

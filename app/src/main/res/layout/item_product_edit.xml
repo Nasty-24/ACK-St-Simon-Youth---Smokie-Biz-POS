@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+    android:background="@drawable/bg_card" android:padding="12dp" android:layout_marginBottom="10dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:id="@+id/editProductTitle" style="@style/AppText.SubHeading" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <CheckBox android:id="@+id/editActive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Active" />
+    </LinearLayout>
+    <EditText android:id="@+id/editName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Name" android:background="@drawable/bg_input" android:padding="8dp" android:layout_marginTop="6dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="6dp">
+        <EditText android:id="@+id/editUnit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Unit" android:background="@drawable/bg_input" android:padding="8dp" android:layout_marginEnd="4dp" />
+        <EditText android:id="@+id/editCost" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Cost" android:inputType="numberDecimal" android:background="@drawable/bg_input" android:padding="8dp" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" />
+        <EditText android:id="@+id/editPrice" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Price" android:inputType="numberDecimal" android:background="@drawable/bg_input" android:padding="8dp" android:layout_marginStart="4dp" />
+    </LinearLayout>
+    <TextView android:id="@+id/editMargin" style="@style/AppText.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" />
+    <Button android:id="@+id/editSaveButton" style="@style/AppButton.Outline" android:layout_width="match_parent" android:layout_height="46dp" android:text="Save changes" android:layout_marginTop="8dp" />
+</LinearLayout>

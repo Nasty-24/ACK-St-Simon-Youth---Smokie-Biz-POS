@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="New sale" style="@style/AppText.Heading" android:layout_marginBottom="10dp" />
+
+    <TextView android:id="@+id/noProductsText" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="No products yet. Ask an admin to add some from the Products tab." style="@style/AppText.Muted"
+        android:visibility="gone" android:padding="24dp" android:textAlignment="center" />
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/productGrid"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false" android:layout_marginBottom="14dp" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Cart" style="@style/AppText.SubHeading" android:layout_marginBottom="6dp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/bg_card" android:padding="12dp" android:orientation="vertical">
+
+        <TextView android:id="@+id/emptyCartText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Tap a product above to add it to the sale." style="@style/AppText.Muted" android:padding="12dp" android:textAlignment="center" />
+
+        <LinearLayout android:id="@+id/cartHost" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:divider="?android:dividerHorizontal" android:showDividers="middle" />
+
+        <TextView android:id="@+id/totalText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Total: KSh 0.00" style="@style/AppText.Heading" android:textAlignment="viewEnd"
+            android:visibility="gone" android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <Button android:id="@+id/checkoutButton" style="@style/AppButton.Primary"
+        android:layout_width="match_parent" android:layout_height="56dp" android:text="Continue to checkout"
+        android:layout_marginTop="16dp" android:enabled="false" />
+</LinearLayout>

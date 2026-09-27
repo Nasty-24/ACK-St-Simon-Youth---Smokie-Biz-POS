@@ -1,0 +1,6 @@
+// Top-level build file. Open this project's root folder directly in
+// Android Studio (Flamingo or newer) and let it sync — no manual Gradle
+// wrapper setup needed, Android Studio generates that on first open.
+plugins {
+    id 'com.android.application' version '8.1.4' apply false
+}

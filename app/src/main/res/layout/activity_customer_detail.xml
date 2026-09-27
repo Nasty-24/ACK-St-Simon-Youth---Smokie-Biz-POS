@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/paper">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+    <Button android:id="@+id/backButton" style="@style/AppButton.Outline" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="← All customers" android:layout_marginBottom="12dp" />
+
+    <TextView android:id="@+id/custName" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AppText.Heading" />
+    <TextView android:id="@+id/custPhone" style="@style/AppText.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:background="@drawable/bg_card" android:padding="14dp" android:layout_marginBottom="16dp">
+        <TextView android:id="@+id/balanceLabel" style="@style/AppText.Muted" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/balanceValue" style="@style/AppText.Heading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Record a payment" style="@style/AppText.SubHeading" android:layout_marginBottom="6dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:background="@drawable/bg_card" android:padding="14dp" android:layout_marginBottom="18dp">
+        <EditText android:id="@+id/paymentAmount" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Amount received" android:inputType="numberDecimal" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginBottom="8dp" />
+        <RadioGroup android:id="@+id/paymentMethodGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <RadioButton android:id="@+id/payMethodCash" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Cash" android:checked="true" />
+            <RadioButton android:id="@+id/payMethodMpesa" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="M-Pesa" />
+        </RadioGroup>
+        <EditText android:id="@+id/paymentNotes" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Note (optional)" android:background="@drawable/bg_input" android:padding="10dp" android:layout_marginBottom="10dp" />
+        <Button android:id="@+id/recordPaymentButton" style="@style/AppButton.Primary" android:layout_width="match_parent" android:layout_height="50dp" android:text="Record payment" />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Statement" style="@style/AppText.SubHeading" android:layout_marginBottom="6dp" />
+    <LinearLayout android:id="@+id/eventListHost" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@drawable/bg_card" android:padding="6dp"
+        android:divider="?android:dividerHorizontal" android:showDividers="middle" />
+</LinearLayout>
+</ScrollView>

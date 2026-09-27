@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_bg_card.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_bg_badge_cash.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/bg_badge_cash.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_bg_badge_credit.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/bg_badge_credit.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_content_dashboard.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/content_dashboard.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_bg_stepper_btn.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/bg_stepper_btn.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_item_user_edit.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/item_user_edit.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_content_reports.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/content_reports.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_content_products.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/content_products.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_tile_spine_ember.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/tile_spine_ember.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_tile_spine_leaf.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/tile_spine_leaf.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_activity_base_shell.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/activity_base_shell.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_ic_launcher.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_item_product_edit.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/item_product_edit.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_activity_customer_detail.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/activity_customer_detail.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_bg_pill.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/bg_pill.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_activity_login.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_tile_spine_soft.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/tile_spine_soft.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_tile_spine_brick.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/tile_spine_brick.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_bg_input.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_content_users.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/content_users.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/xml_file_paths.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/xml/file_paths.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_content_customers.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/content_customers.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_item_product.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/item_product.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_bg_badge_mpesa.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/bg_badge_mpesa.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_tile_spine_maize.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/tile_spine_maize.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_activity_checkout.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/activity_checkout.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_content_pos.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/content_pos.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_activity_receipt.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/activity_receipt.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/drawable_tile_spine_navy.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/drawable/tile_spine_navy.xml"
+    },
+    {
+        "merged": "co.churchyouth.pos.app-merged_res-31:/layout_activity_forbidden.xml.flat",
+        "source": "co.churchyouth.pos.app-main-33:/layout/activity_forbidden.xml"
+    }
+]
